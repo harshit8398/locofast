@@ -139,7 +139,7 @@ class App extends React.Component{
 
     let {quantity} = this.state;
 
-    if(quantity == '' || isNaN(quantity))
+    if(quantity === '' || isNaN(quantity))
     {
       alert('Please enter a valid quantity value');
       return false;
@@ -148,7 +148,7 @@ class App extends React.Component{
     var file = document.getElementById('file');
     console.log(file.value)
 
-    if(file.value == '' || file.value == undefined)
+    if(file.value === '' || file.value === undefined)
     {
       alert('Please upload challan file');
       return false;
@@ -198,13 +198,13 @@ class App extends React.Component{
               
               <div className={"flexRow"} style={{justifyContent:'space-between',padding:'0px 24px'}}>
                 <span className={"text_20_700_000126"}>Material details</span>
-                {/* <img src={close}/> */}
+                {/* <img alt={'dummy'} src={close}/> */}
               </div>
 
               <div className={"flexRow"} style={{marginTop:40,padding:'0px 24px'}}>
 
                 <div>
-                  <img src={activeProduct.image} style={{width:330}} onClick={this.closeModal}/>
+                  <img alt={'dummy'} src={activeProduct.image} style={{width:330}} onClick={this.closeModal}/>
                 </div>
                 
                 {
@@ -213,7 +213,7 @@ class App extends React.Component{
                   <div className={"flexColumn"} style={{flex:1,marginLeft:48}}>
                     
                     <div className={"flexRow"}>
-                      <img src={back}/>
+                      <img alt={'dummy'} src={back}/>
                       <span style={{paddingLeft:20}} className={"text_20_700_000126"}>Assign to factory</span>
                     </div>
                     
@@ -224,7 +224,7 @@ class App extends React.Component{
                           <option>Amaya creations</option>
                           <option>Pinki creations</option>
                         </select>
-                        <img src={down} className={"dropIcon"}/>
+                        <img alt={'dummy'} src={down} className={"dropIcon"}/>
                       </div>
                     </div>
 
@@ -238,7 +238,7 @@ class App extends React.Component{
                           <option style={{backgroundImage: `url(${ellipse3})`}}>Design name 3</option>
                           <option style={{backgroundImage: `url(${ellipse4})`}}>Design name 4</option>
                         </select>
-                        <img src={down} className={"dropIcon"}/>
+                        <img alt={'dummy'} src={down} className={"dropIcon"}/>
                       </div> */}
                       
                       <div style={{marginTop:8}} className={"dropdown"}> 
@@ -247,13 +247,13 @@ class App extends React.Component{
                           </button> 
                             
                           <div className={"dropdown-content"}> 
-                              <div onClick={()=>this.setDesign('Design name 1')}><img src={ellipse1} /><span style={{paddingLeft:10}} className={"text_14_400_000126"}>Design name 1</span></div>
-                              <div onClick={()=>this.setDesign('Design name 2')}><img src={ellipse2} /><span style={{paddingLeft:10}} className={"text_14_400_000126"}>Design name 2</span></div>
-                              <div onClick={()=>this.setDesign('Design name 3')}><img src={ellipse3} /><span style={{paddingLeft:10}} className={"text_14_400_000126"}>Design name 3</span></div>
-                              <div onClick={()=>this.setDesign('Design name 4')}><img src={ellipse4} /><span style={{paddingLeft:10}} className={"text_14_400_000126"}>Design name 4</span></div>
+                              <div onClick={()=>this.setDesign('Design name 1')}><img alt={'dummy'} src={ellipse1} /><span style={{paddingLeft:10}} className={"text_14_400_000126"}>Design name 1</span></div>
+                              <div onClick={()=>this.setDesign('Design name 2')}><img alt={'dummy'} src={ellipse2} /><span style={{paddingLeft:10}} className={"text_14_400_000126"}>Design name 2</span></div>
+                              <div onClick={()=>this.setDesign('Design name 3')}><img alt={'dummy'} src={ellipse3} /><span style={{paddingLeft:10}} className={"text_14_400_000126"}>Design name 3</span></div>
+                              <div onClick={()=>this.setDesign('Design name 4')}><img alt={'dummy'} src={ellipse4} /><span style={{paddingLeft:10}} className={"text_14_400_000126"}>Design name 4</span></div>
                           </div> 
 
-                          <img src={down} className={"dropIcon"}/>
+                          <img alt={'dummy'} src={down} className={"dropIcon"}/>
                       </div> 
 
                     </div>
@@ -276,7 +276,7 @@ class App extends React.Component{
                       <span className={"text_14_600_333340"}>Assign challan</span>
                       <div className={"enterInput"} style={{border:'dashed 1px #d4d4d4',position:'relative',marginTop:8}} onClick={this.handleClick}>
                         <input type={"file"} id={"file"} placeholder={"Select file"} />
-                        <img src={attachicon} className={"attachIcon"}/>
+                        <img alt={'dummy'} src={attachicon} className={"attachIcon"}/>
                         <span style={{position:'absolute',top:6}}>Select file</span>
                       </div>
                     </div>
@@ -290,15 +290,15 @@ class App extends React.Component{
                   <div className={"flexColumn"} style={{flex:1,marginLeft:48}}>
                     
                     <div className={"flexRow"}>
-                      <img src={back} style={{cursor:'pointer'}} onClick={this.goBack}/>
+                      <img alt={'dummy'} src={back} style={{cursor:'pointer'}} onClick={this.goBack}/>
                       <span style={{paddingLeft:20}} className={"text_20_700_000126"}>Assign to factory</span>
                     </div>
 
                     <div style={{marginTop:24}} className={"warning"}>
                       <div style={{position:'relative',display:'flex',width:18,height:18}}>
-                        <img src={oval}/>
-                        <img src={blue} style={{position:'absolute',left:8,top:5}}/>
-                        <img src={line} style={{position:'absolute',left:8,top:8}}/>
+                        <img alt={'dummy'} src={oval}/>
+                        <img alt={'dummy'} src={blue} style={{position:'absolute',left:8,top:5}}/>
+                        <img alt={'dummy'} src={line} style={{position:'absolute',left:8,top:8}}/>
                       </div>
                       <span style={{paddingLeft:10}} className={"text_14_400_000126"}>You won't be able to change the details later.</span>
                     </div>
@@ -322,8 +322,8 @@ class App extends React.Component{
                       <span className={"text_14_400_676773"}>Challan</span>
                       <div className={"fileContainer"} style={{marginTop:8}}>
                         <span className={"text_14_400_000126"}>{this.state.fileName}</span>
-                        <img src={eye} style={{position:'absolute',right:16}}/>
-                        <img src={circle} style={{position:'absolute',right:22}}/>
+                        <img alt={'dummy'} src={eye} style={{position:'absolute',right:16}}/>
+                        <img alt={'dummy'} src={circle} style={{position:'absolute',right:22}}/>
                       </div>
                     </div>
                   
