@@ -9,7 +9,7 @@ import random from './assets/random.svg';
 import brown from './assets/brown.svg';
 import button from './assets/button.svg';
 
-import close from './assets/close.svg';
+// import close from './assets/close.svg';
 import back from './assets/back.svg';
 import down from './assets/down.svg';
 import attachicon from './assets/attachicon.svg';
@@ -198,7 +198,7 @@ class App extends React.Component{
               
               <div className={"flexRow"} style={{justifyContent:'space-between',padding:'0px 24px'}}>
                 <span className={"text_20_700_000126"}>Material details</span>
-                <img src={close}/>
+                {/* <img src={close}/> */}
               </div>
 
               <div className={"flexRow"} style={{marginTop:40,padding:'0px 24px'}}>
